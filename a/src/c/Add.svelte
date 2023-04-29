@@ -3,8 +3,8 @@
     let total = 0
 
     function sum() {
-        if (num === NaN || total === NaN) {
-            reset()
+        if (num == NaN || total == NaN) {
+            total = 0
         } else {
             total = parseInt(total) + parseInt(num)
             num = ""
