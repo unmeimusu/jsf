@@ -4,7 +4,7 @@
 
     function sum() {
         if (num === NaN || total === NaN) {
-            total = 0
+            reset()
         } else {
             total = parseInt(total) + parseInt(num)
             num = ""
