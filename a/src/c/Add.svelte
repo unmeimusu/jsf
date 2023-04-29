@@ -1,20 +1,22 @@
 <script>
-    let arr = []
     let num
     let total = 0
 
     function sum() {
         total = total + parseInt(num)
-        total = total
+        num = ""
+    }
+    function reset() {
+        total = 0
     }
 </script>
 
+<h2># 1</h2>
 <input type="text" name="" id="" bind:value={num}/>
 <button on:click={sum}>Add</button>
+<button on:click={reset}>Reset</button>
 <div>
-    <ul>
-        <li>{num}</li>
-    </ul>
+    {num}
 </div>
 <div>
     <p>{total}</p>
