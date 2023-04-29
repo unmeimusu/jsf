@@ -4,10 +4,8 @@
     let total = 0
 
     function sum() {
-        sum = total + num
-        sum = sum
+        total = total + num
     }
-    
 </script>
 
 <input type="text" name="" id="" bind:value={num}/>
