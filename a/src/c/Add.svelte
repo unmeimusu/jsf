@@ -7,11 +7,11 @@
             total = parseInt(total) + parseInt(num)
             num = ""
         } else {
-            num = 0
-            total = 0
+            reset()
         }
     }
     function reset() {
+        num = ""
         total = 0
     }
 </script>
