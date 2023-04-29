@@ -11,6 +11,6 @@
 <button on:click={add(newname)}>Add</button>
 <ul>
     {#each listname as name,index}
-        <li>{name}</li>
+        <li>`{index+1}. {name}`</li>
     {/each}
 </ul>
