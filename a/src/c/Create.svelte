@@ -7,6 +7,7 @@
     }
 </script>
 
+<h2>#3</h2>
 <input type="text" bind:value={newname}>
 <button on:click={add(newname)}>Add</button>
 <ul>
