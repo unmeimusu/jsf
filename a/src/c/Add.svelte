@@ -1,8 +1,12 @@
 <script>
     let arr = []
     let num = 0
+    let total = 0
 
-    sum = num + num
+    function sum() {
+        sum = total + num
+        sum = sum
+    }
     
 </script>
 
@@ -14,5 +18,5 @@
     </ul>
 </div>
 <div>
-    <p>{sum}</p>
+    <p>{total}</p>
 </div>
