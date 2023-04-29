@@ -3,11 +3,12 @@
     let total = 0
 
     function sum() {
-        if (num !== NaN) {
+        if (num !== NaN && total !== NaN) {
             total = parseInt(total) + parseInt(num)
             num = ""
         } else {
-            num = ""
+            num = 0
+            total = 0
         }
     }
     function reset() {
