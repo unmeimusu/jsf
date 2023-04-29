@@ -1,6 +1,7 @@
 ---
 import Add from "../c/Add.svelte"
-import Plus from "../c/Plus.svelte";
+import Create from "../c/Create.svelte"
+import Plus from "../c/Plus.svelte"
 ---
 
 <html lang="en">
@@ -16,6 +17,7 @@ import Plus from "../c/Plus.svelte";
 		<div>
 			<!--client: elements interactive (hydrated) -->
 			<Add client:load/>
+			<Create client:load/>
 			<Plus client:load/>
 		</div>
 	</body>
