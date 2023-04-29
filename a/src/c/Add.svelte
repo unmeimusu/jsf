@@ -1,10 +1,11 @@
 <script>
     let arr = []
-    let num = 0
+    let num
     let total = 0
 
     function sum() {
-        total = total + num
+        total = total + parseInt(num)
+        total = total
     }
 </script>
 
