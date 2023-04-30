@@ -28,7 +28,7 @@
 <div>
     <ul>
         {#each listdata as data,index}
-            <li>{index+1}. {data}<button on:click={data[index].pop()}>X</button></li>
+            <li>{index+1}. {data}<button on:click={listdata.splice(index,1)}>X</button></li>
             
         {/each}
     </ul>
