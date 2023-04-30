@@ -35,7 +35,7 @@
 <div>
     {#if sum}
         <span>{sum}</span>
-    {:else if sum == "undefined"}
+    {:else if isNaN(sum)}
        <span>please insert a value</span>
     {/if}
 </div>
