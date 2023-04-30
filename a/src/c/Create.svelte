@@ -28,7 +28,8 @@
 <div>
     <ul>
         {#each listdata as data,index}
-            <li>{index+1}. {data}</li>
+            <li>{index+1}. {data}<button on:click={listdata[index].pop()}>X</button></li>
+            
         {/each}
     </ul>
 </div>
