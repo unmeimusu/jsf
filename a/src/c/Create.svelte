@@ -18,7 +18,6 @@
     }
 
     $: sum = listdata.reduce((total,num) => total+num,0)
-    $: del = listdata.splice((index) => index,1)
     
 </script>
 
@@ -28,7 +27,7 @@
 <div>
     <ul>
         {#each listdata as data,index}
-            <li>{index+1}. {data}<button on:click={del}>X</button></li>
+            <li>{index+1}. {data}<button on:click={listdata.splice((index) => index,1)}>X</button></li>
             
         {/each}
     </ul>
