@@ -13,13 +13,13 @@
         newdata = ""
     }
 
-    function del(i) {
-        listdata.splice(i,1)
-    }
 
-    $: sum = listdata.reduce((total,num) => total+num,0)
-    $: del(i)
-    
+
+    $: { sum = listdata.reduce((total,num) => total+num,0)
+        function del(i) {
+            listdata.splice(i,1)
+        }
+    }
 </script>
 
 <h2>#3</h2>
