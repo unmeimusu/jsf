@@ -33,10 +33,9 @@
     </ul>
 </div>
 <div>
-    {#if x}
-        <span>please enter a value first</span>
-    {:else if 5 > x}
+    {#if sum}
+        <span>{sum}</span>
+    {:else if sum == undefined}
        {alert("test")}    
     {/if}
-        
 </div>
