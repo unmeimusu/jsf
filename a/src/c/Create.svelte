@@ -27,6 +27,6 @@
 </div>
 <div>
     {#each listdata as data}
-    <span>{total += data}</span>
+        <span>{total += data}</span>
     {/each}
 </div>
