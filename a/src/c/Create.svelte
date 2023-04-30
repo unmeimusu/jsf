@@ -35,7 +35,7 @@
 <div>
     {#if sum}
         <span>{sum}</span>
-    {:else if sum == undefined}
-       {alert("test")}    
+    {:else if sum == "undefined"}
+       <span>please insert a value</span>
     {/if}
 </div>
