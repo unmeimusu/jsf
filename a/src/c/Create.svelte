@@ -12,7 +12,9 @@
         newdata = ""
     }
 
-    let total = 0
+    function sumLtoR(total, num) {
+        return total + num
+    }
 </script>
 
 <h2>#3</h2>
@@ -27,6 +29,6 @@
 </div>
 <div>
     {#each listdata as data}
-        <span>{total += data}</span>
+        <span>{s}</span>
     {/each}
 </div>
