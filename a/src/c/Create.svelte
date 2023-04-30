@@ -33,9 +33,9 @@
     </ul>
 </div>
 <div>
-    {#if sum}
+    {#if sum > 1}
         <span>{sum}</span>
-    {:else if isNaN(sum)}
+    {:else if sum == ""}
        <span>please insert a value</span>
     {/if}
 </div>
