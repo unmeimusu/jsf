@@ -2,8 +2,8 @@
     let listname = []
     let newname = ""
 
-    function add(newdata) {
-        listname.push(newdata)
+    function add() {
+        listname.push(newname)
     }
 
     $: x = add(newname)
@@ -11,7 +11,7 @@
 
 <h2>#3</h2>
 <input type="text" bind:value={newname}>
-<button on:click={add(newname)}>Add</button>
+<button on:click={add()}>Add</button>
 <ul>
     {#each listname as name,index}
         <li>{index+1}. {name}</li>
