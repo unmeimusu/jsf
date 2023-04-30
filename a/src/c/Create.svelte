@@ -1,25 +1,32 @@
 <script>
-    let listname = []
-    let newname = ""
+    let listdata = []
+    let newdata = ""
 
     function add() {
-        if (isNaN(newname) || newname == "") {
-            listname = listname
+        if (isNaN(newdata) || newdata == "") {
+            listdata = listdata
         } else {
-            listname.push(newname)
-            listname = listname // for array and object need to re-assign, telling the compiler it has changed
+            listdata.push(parseInt(newdata))
+            listdata = listdata // for array and object need to re-assign, telling the compiler it has changed
         }
-        newname = ""
+        newdata = ""
     }
+
+    let total = 0
 </script>
 
 <h2>#3</h2>
-<input type="text" bind:value={newname}>
+<input type="text" bind:value={newdata}>
 <button on:click={add}>Add</button>
 <div>
     <ul>
-        {#each listname as name,index}
-            <li>{index+1}. {name}</li>
+        {#each listdata as data,index}
+            <li>{index+1}. {data}</li>
         {/each}
     </ul>
+</div>
+<div>
+    {#each listdata as data}
+    <span>{total += data}</span>
+    {/each}
 </div>
