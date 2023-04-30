@@ -3,10 +3,13 @@
     let newname = ""
 
     function add() {
-        listname.push(newname)
+        if (isNaN(newname)) {
+            
+        } else {
+            listname.push(newname)
+            listname = listname // for array and object need to re-assign, telling the compiler it has changed
+        }
     }
-
-    $: x = add()
 </script>
 
 <h2>#3</h2>
