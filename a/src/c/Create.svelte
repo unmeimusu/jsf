@@ -15,6 +15,7 @@
     function sumLtoR(total, num) {
         return total + num
     }
+
 </script>
 
 <h2>#3</h2>
@@ -28,7 +29,5 @@
     </ul>
 </div>
 <div>
-    {#each listdata as data}
-        <span>{s}</span>
-    {/each}
+        <span>{listdata.reduce(sumLtoR)}</span>
 </div>
