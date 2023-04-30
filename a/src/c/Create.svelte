@@ -30,8 +30,10 @@
     </ul>
 </div>
 <div>
-    {#if}
+    {#if x}
         <span>please enter a value first</span>
+    {:else if 5 > x}
+       {alert("test")}    
     {/if}
         
 </div>
