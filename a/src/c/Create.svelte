@@ -4,7 +4,7 @@
 
     function add() {
         if (isNaN(newname)) {
-            
+            listname = listname
         } else {
             listname.push(newname)
             listname = listname // for array and object need to re-assign, telling the compiler it has changed
