@@ -16,6 +16,7 @@
         return total + num
     }
 
+    $: sum = listdata.reduce(sumLtoR)
 </script>
 
 <h2>#3</h2>
@@ -29,5 +30,5 @@
     </ul>
 </div>
 <div>
-        <span>{listdata.reduce(sumLtoR)}</span>
+        <span>{sum}</span>
 </div>
