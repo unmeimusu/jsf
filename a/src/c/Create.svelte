@@ -33,7 +33,7 @@
     </ul>
 </div>
 <div>
-    {#if sum > 1}
+    {#if sum}
         <span>{sum}</span>
     {:else if sum == ""}
        <span>please insert a value</span>
