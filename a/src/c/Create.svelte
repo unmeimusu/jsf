@@ -13,11 +13,12 @@
         newdata = ""
     }
 
-    function sumLtoR(total, num) {
-        return total + num
+    function del(i) {
+        listdata.splice(i,1)
     }
 
     $: sum = listdata.reduce((total,num) => total+num,0)
+    $: del(i)
     
 </script>
 
@@ -27,7 +28,7 @@
 <div>
     <ul>
         {#each listdata as data,index}
-            <li>{index+1}. {data}<button on:click={listdata.splice((index) => index,1)}>X</button></li>
+            <li>{index+1}. {data}<button on:click={del(index)}>X</button></li>
             
         {/each}
     </ul>
