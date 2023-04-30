@@ -7,6 +7,7 @@
             listdata = listdata
         } else {
             listdata.push(parseInt(newdata))
+            
             listdata = listdata // for array and object need to re-assign, telling the compiler it has changed
         }
         newdata = ""
@@ -16,7 +17,9 @@
         return total + num
     }
 
-    $: sum = listdata.reduce(sumLtoR)
+    $: sum = listdata.reduce((total,num) => total+num,0)
+
+    
 </script>
 
 <h2>#3</h2>

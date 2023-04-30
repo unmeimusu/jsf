@@ -19,7 +19,7 @@
     }
 </script>
 
-<h2># 1</h2>
+<h2>#1</h2>
 <input type="text" name="" id="" bind:value={num}/>
 <button on:click={sum}>Add</button>
 <button on:click={reset}>Reset</button>
