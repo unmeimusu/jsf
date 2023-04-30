@@ -15,6 +15,7 @@
 
     function del(i) {
             listdata.splice(i,1)
+            listdata = listdata
     }
 
     $: sum = listdata.reduce((total,num) => total+num,0);
