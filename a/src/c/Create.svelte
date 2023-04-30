@@ -30,5 +30,8 @@
     </ul>
 </div>
 <div>
-        <span>{sum}</span>
+    {#if}
+        <span>please enter a value first</span>
+    {/if}
+        
 </div>
