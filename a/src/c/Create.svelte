@@ -13,11 +13,6 @@
         newdata = ""
     }
 
-/*     function del(i) {
-            listdata.splice(i,1)
-            listdata = listdata
-    } */
-
     let sum, del // initialize any variable inside multiline $:
 
     $: {
