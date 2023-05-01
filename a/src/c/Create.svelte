@@ -22,7 +22,6 @@
             listdata = listdata
         }
     }
-    
 </script>
 
 <h2>#3</h2>
