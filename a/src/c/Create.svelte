@@ -18,10 +18,15 @@
             listdata = listdata
     } */
 
-    
+    let sum, del // initialize any variable inside multiline $:
 
-    $: sum = listdata.reduce((total,num) => total+num,0);
-    $: del = (i) => listdata.splice(i,1)
+    $: {
+        sum = listdata.reduce((total,num) => total+num,0);
+        del = (i) => {
+            listdata.splice(i,1);
+            listdata = listdata
+        }
+    }
     
 </script>
 
