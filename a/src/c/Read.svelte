@@ -3,14 +3,14 @@
     let aCloseTab = () => window.close()
     let moveTo = () => window.moveTo()
     let resizeTo = () => window.resizeTo()
-    let locHost = () => setTimeout(location.host,3000)
-    let locHash = () => setTimeout(location.hash,3000)
-    let locHostname = () => setTimeout(location.hostname,3000)
-    let locOrigin = () => setTimeout(location.origin,3000)
-    let locPort = () => setTimeout(location.port,3000)
-    let locPro = () => setTimeout(location.protocol,3000)
-    let locPat = () => setTimeout(location.pathname,3000)
-    let locHref = () => setTimeout(location.href,3000)
+    let locHost = () => window.location.host
+    let locHash = () => location.hash
+    let locHostname = () => location.hostname
+    let locOrigin = () => location.origin
+    let locPort = () => location.port
+    let locPro = () => location.protocol
+    let locPat = () => location.pathname
+    let locHref = () => location.href
 </script>
 
 <style>
