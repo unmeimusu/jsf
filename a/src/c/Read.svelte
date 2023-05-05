@@ -8,7 +8,9 @@
     let locHostname = () => window.location.hostname
     let locOrigin = () => window.location.origin
     let locPort = () => window.location.port
-    
+    let locPro = () => window.location.protocol
+    let locPat = () => window.location.pathname
+    let locHref = () => window.location.href
 </script>
 
 <style>
@@ -17,7 +19,7 @@
 <h3>Information Window:</h3>
 <p>Length: {Window.length}, Name: {Window.name}</p>
 <h3>Information Location:</h3><!--inconsistent ReferenceError: fixed by block comment it and then uncomment it again, or use event listener to call it-->
-<p>Host: {window.location.host}}, Hash: {async () => {location.hash}}, Hostname: {async () => {location.hostname}}, Origin: {async () => {location.origin}}, Port: {location.port}, Protocol: {location.protocol}, {async () => {location.pathname}}, {async () => {location.href}}</p>-->
+<p>Host: {locHost()}}, Hash: {locHash}, Hostname: {locHostname}}, Origin: {locOrigin}, Port: {locPort}, Protocol: {locPro}, {locPat}, {locHref}</p>
 <h3>Command methods</h3>
 <button on:click={aNewTab}>New Tab</button>
 <button on:click={aCloseTab}>Close</button>
