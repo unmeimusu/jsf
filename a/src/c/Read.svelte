@@ -4,6 +4,10 @@
     let moveTo = () => window.moveTo()
     let resizeTo = () => window.resizeTo()
     let locHost = () => window.location.host
+    let locHash = () => window.location.hash
+    let locHostname = () => window.location.hostname
+    let locOrigin = () => window.location.origin
+    let locPort = () => window.location.port
     
 </script>
 
