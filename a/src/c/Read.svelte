@@ -11,6 +11,7 @@
     let locPro = () => location.protocol
     let locPat = () => location.pathname
     let locHref = () => location.href
+    let locAssign = () => location.assign("https://wikipedia.com") 
 </script>
 
 <style>
@@ -25,3 +26,4 @@
 <button on:click={aCloseTab}>Close</button>
 <button on:click={moveTo}>Move To</button>
 <button on:click={resizeTo}>Resize To</button>
+<input type="button" value="Load new document" on:click={locAssign}>
