@@ -19,7 +19,7 @@
 <h3>Information Window:</h3>
 <p>Length: {Window.length}, Name: {Window.name}</p>
 <h3>Information Location:</h3><!--inconsistent ReferenceError: fixed by block comment it and then uncomment it again, or use event listener to call it-->
-<p>Host: {locHost()}}, Hash: {locHash}, Hostname: {locHostname}}, Origin: {locOrigin}, Port: {locPort}, Protocol: {locPro}, {locPat}, {locHref}</p>
+<p>Host: {locHost()}, Hash: {locHash()}, Hostname: {locHostname()}, Origin: {locOrigin()}, Port: {locPort()}, Protocol: {locPro()}, {locPat()}, {locHref()}</p>
 <h3>Command methods</h3>
 <button on:click={aNewTab}>New Tab</button>
 <button on:click={aCloseTab}>Close</button>
