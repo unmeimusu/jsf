@@ -9,4 +9,4 @@
 <h3>Information Location:</h3><!--inconsistent ReferenceError: fixed by block comment it and then unblock comment the code again-->
 <!-- <p>Host: {location.host}, Hash: {location.hash}, Hostname: {location.hostname}, Origin: {location.origin}, Port: {location.port}, Protocol: {location.protocol}, {location.pathname}, {location.href}</p>
  --><h3>Command methods</h3>
- <button on:click={window.open()}>Open</button>
+ <button on:click={Window.open()}>Open</button>
