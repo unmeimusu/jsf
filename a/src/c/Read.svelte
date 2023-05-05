@@ -3,6 +3,8 @@
     let aCloseTab = () => window.close()
     let moveTo = () => window.moveTo()
     let resizeTo = () => window.resizeTo()
+    let locHost = () => window.location.host
+    
 </script>
 
 <style>
