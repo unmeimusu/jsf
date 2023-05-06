@@ -4,14 +4,14 @@
     let moveTo = () => window.moveTo()
     let resizeTo = () => window.resizeTo()
     let locHost = () => window.location.host
-    let locHash = () => location.hash
-    let locHostname = () => location.hostname
-    let locOrigin = () => location.origin
-    let locPort = () => location.port
-    let locPro = () => location.protocol
-    let locPat = () => location.pathname
-    let locHref = () => location.href
-    let locAssign = () => location.assign("https://wikipedia.com") 
+    let locHash = () => window.location.hash
+    let locHostname = () => window.location.hostname
+    let locOrigin = () => window.location.origin
+    let locPort = () => window.location.port
+    let locPro = () => window.location.protocol
+    let locPat = () => window.location.pathname
+    let locHref = () => window.location.href
+    let locAssign = () => window.location.assign("https://wikipedia.com") 
 </script>
 
 <style>
